@@ -14,10 +14,20 @@
                 width: 0;
             }
         }
+
+        @keyframes bordercurve {
+            0% {
+                border-radius: 0px;
+            }
+            100% {
+                border-radius: 10px;
+            }
+        }
         
         #the-goddamn-heading {
             overflow: hidden;
             position: absolute;
+            animation: bordercurve 3s;
             
         }
         
@@ -29,6 +39,7 @@
             height: 100%;
             
             animation: slideOut 2s;
+            
             
             z-index: 1;
         }
