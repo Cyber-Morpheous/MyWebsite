@@ -1,7 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="./index.css">
 <head>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        @keyframes slideOut {
+            0% {background-color: red;
+                transform: translateX(0%);
+                width: 200px;
+            }
+            100% {
+                background-color: red;
+                transform: translateX(100%);
+                width: 0;
+            }
+        }
+        
+        #the-goddamn-heading {
+            overflow: hidden;
+            position: absolute;
+            
+        }
+        
+        #hello {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            animation: slideOut 2s;
+            
+            z-index: 1;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
@@ -10,20 +41,8 @@
 <body id="body">
     <div class="heading-div" id="rect1">
         <div id="the-goddamn-heading">
-            <div class="content">
-                <div class="content__container">
-                  <ul class="content__container__list">
-                    <li class="content__container__list__item">HI</li>
-                    <li class="content__container__list__item">HELLO</li>
-                    <li class="content__container__list__item">مرحبًا</li>
-                    <li class="content__container__list__item">Привет</li>
-                  </ul>
-                </div>
-            </div>
-
-
-
-
+            <h1>HELLO</h1>
+            <div id="hello"></div>
         </div>
     </div> <br>
     <div class="heading-div" id="rect2">
@@ -31,5 +50,5 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores dolorem, distinctio eum molestias nemo dolor? Repudiandae quaerat id delectus ullam obcaecati quia amet, magnam rem ea est magni dignissimos.</p>
     </div>
 </body>
-<script src="./index.js"></script>
+<script src="index.js"></script>
 </html>
