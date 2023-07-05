@@ -33,7 +33,10 @@
   font-weight: 600;*/
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #FF6347;
+  color: rgb(36, 57, 78);
+  -webkit-text-stroke: black;
+  text-stroke: black;
+  -webkit-text-stroke-width: 3px;
 }
 
 @-webkit-keyframes opacity {
@@ -170,7 +173,7 @@
 }
 
 #rect1 {
-  background-image: url("_6951e5a8-8819-4b15-a849-9ba753f5f125.jpg");
+  background-image: url("_c6e58552-c37d-4f42-8640-5428ca6642dd.jpeg");
   background-size: cover;
   background-color: black;
   color: rgb(185, 174, 160);
