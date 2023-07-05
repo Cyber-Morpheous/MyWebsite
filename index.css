@@ -30,6 +30,16 @@
   background-color: #5c2d1c;
 }
 
+@keyframes SlideIn {
+  0% {
+    background-color: red;
+    transform: translateX(-100%);
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0);
+  }
+}
 @keyframes slideOut {
   0% {
     background-color: red;
@@ -39,7 +49,7 @@
   100% {
     background-color: red;
     transform: translateX(100%);
-    width: 0;
+    width: 0px;
   }
 }
 @keyframes bordercurve {

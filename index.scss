@@ -36,6 +36,11 @@
     background-color: #5c2d1c;
 }
 
+@keyframes SlideIn {
+    0% {background-color: red;transform: translateX(-100%);}
+    100% {background-color: red;transform: translateX(0);}
+}
+
 @keyframes slideOut {
     0% {background-color: red;
         
@@ -45,8 +50,7 @@
     100% {
         background-color: red;
         transform: translateX(100%);
-        
-        width: 0;
+        width: 0px;
     }
 }
 
@@ -89,5 +93,7 @@
     width: 100%;
     height: 100%;
     animation: slideOut 2s;
+    //animation: SlideIn 0.5s, slideOut 0.5s;
+    //animation-delay: 0s, 0.5s;
     z-index: 1;
 }
