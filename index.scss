@@ -13,8 +13,9 @@
 }
   
 #body {
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .heading-div {
@@ -37,8 +38,20 @@
     //animation: color-transition 3s
 }
 
-#rect2 {
+#rect2_about_me {
     background-color: #5c2d1c;
+    color: rgb(185, 174, 160);
+  }
+  
+.about-me-section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s, transform 1s;
+}
+  
+.about-me-section.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @keyframes SlideIn {
@@ -108,3 +121,8 @@
     top: 2%;
     right: 2%;
 }
+
+#footer {
+
+}
+

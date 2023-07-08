@@ -10,3 +10,24 @@ console.log(deviceHeight);
 
 //var HelloLengthinPercentage = 0.13263
 //var dynamic_height = deviceHeight * HelloLengthinPercentage
+
+document.addEventListener("DOMContentLoaded", function() {
+    var aboutMeSection = document.querySelector(".about-me-section");
+    var animationTriggered = false;
+
+    function animateAboutMeSection() {
+        var sectionPosition = aboutMeSection.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+
+        if (sectionPosition < windowHeight && !animationTriggered) {
+            aboutMeSection.classList.add("animate");
+            animationTriggered = true;
+        } else if (sectionPosition >= windowHeight && animationTriggered) {
+            aboutMeSection.classList.remove("animate");
+            animationTriggered = false;
+        }
+    }
+
+    window.addEventListener("scroll", animateAboutMeSection);
+});
+
